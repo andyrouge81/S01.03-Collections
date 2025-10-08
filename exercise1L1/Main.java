@@ -44,42 +44,38 @@ public class Main {
         }
 
         System.out.println();
+
         // we create and add the 8th month
         // the August month is the 8th in the list of months but sthe ArrayList stars at 0 index,
         // so the August month will be 7th index in the ArrayList
 
-        months.add(7,new Month("August"));
+        months.add(7, new Month("August"));
 
         for(Month m : months){
             System.out.println(m);
         }
 
         // convert the ArrayList to HashSet
+        System.out.println();
         System.out.println("HashSet: ");
         HashSet<Month> months2 = new HashSet<>(months);
 
-        /*for(Month m2 : months2){
-            System.out.println(m2);
-        }*/
-
-        System.out.println(months2.getClass());
 
         // we create an Iterator for traverse the new HashSet collection
         Iterator<Month> it = months2.iterator();
 
         // we try to add the 12th month but the Set collections no admits duplicates
         months2.add(month12);
+        System.out.print("[");
 
         // the next() argument helps to traverse the HashSet
         while(it.hasNext()){
+
             String month = it.next().getNameMonth();
-            System.out.println(month);
+            System.out.print(month+" -");
 
         }
-
-
-
-
+        System.out.print("]");
 
     }
 }

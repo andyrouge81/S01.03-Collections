@@ -6,11 +6,15 @@ public class Month {
 
     private String nameMonth;
 
+    //constructor
+
     public Month(String nameMonth){
         this.nameMonth = nameMonth;
     }
 
+
     public String getNameMonth(){return nameMonth;}
+
 
     @Override
     public String toString(){
