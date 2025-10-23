@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ListIterator;
 
-public class Main {
+public class MainReverse {
     public static void main(String[] args) {
 
 
@@ -36,8 +36,6 @@ public class Main {
             System.out.print(" - "+integerNumber);
 
         }
-
-
 
     }
 }
