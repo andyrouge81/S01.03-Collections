@@ -5,12 +5,15 @@ import TascaS103Collections.exercise1L1.model.Month;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.Set;
 
 public class Main {
 
     public static void main(String[] args) {
 
         ArrayList<Month> months = new ArrayList<>();
+
+		int i = 1;
 
         Month month1 = new Month("January");
         Month month2 = new Month("February");
@@ -24,7 +27,7 @@ public class Main {
         Month month11 = new Month("November");
         Month month12 = new Month("December");
 
-        // add moths to the ArrayList
+
 
         months.add(month1);
         months.add(month2);
@@ -39,40 +42,39 @@ public class Main {
         months.add(month11);
         months.add(month12);
 
-        for(int i = 0; i<months.size();i++){
-            System.out.println(months.get(i));
-        }
+		System.out.println("The list of months without 'August'.");
+		for(Month month : months){
+			System.out.println("Month "+i+ ": "+month.getNameMonth());
+			i++;
+		}
 
         System.out.println();
 
-        // we create and add the 8th month
-        // the August month is the 8th in the list of months but sthe ArrayList stars at 0 index,
-        // so the August month will be 7th index in the ArrayList
 
         months.add(7, new Month("August"));
-
+		i = 1;
+		System.out.println("The list of months adding August.");
         for(Month m : months){
-            System.out.println(m);
+
+            System.out.println("Month "+i+ ": "+m.getNameMonth());
+			i++;
         }
 
-        // convert the ArrayList to HashSet
         System.out.println();
         System.out.println("HashSet: ");
-        HashSet<Month> months2 = new HashSet<>(months);
+        Set<Month> months2 = new HashSet<>(months);
 
+		Iterator<Month> it = months2.iterator();
 
-        // we create an Iterator for traverse the new HashSet collection
-        Iterator<Month> it = months2.iterator();
-
-        // we try to add the 12th month but the Set collections no admits duplicates
+		System.out.println("We try to add the 'December' month twice but only appears once.");
         months2.add(month12);
         System.out.print("[");
 
-        // the next() argument helps to traverse the HashSet
+
         while(it.hasNext()){
 
             String month = it.next().getNameMonth();
-            System.out.print(month+" -");
+			System.out.print(month+", ");
 
         }
         System.out.print("]");
