@@ -8,7 +8,7 @@ import java.util.TreeSet;
 public class Main {
     public static void main(String[] args) {
 
-        Set<RestaurantCompare> sortrestauration = new TreeSet<>();
+        Set<RestaurantCompare> sortRestauration = new TreeSet<>();
 
         RestaurantCompare res1 = new RestaurantCompare("Can Pipo", 5);
 
@@ -16,15 +16,16 @@ public class Main {
 
         RestaurantCompare res3 = new RestaurantCompare("Rosseta", 4);
 
-        RestaurantCompare res4 = new RestaurantCompare("Posseta", 7);
+        RestaurantCompare res4 = new RestaurantCompare("Rosseta", 7);
 
-        sortrestauration.add(res1);
-        sortrestauration.add(res2);
-        sortrestauration.add(res3);
-        sortrestauration.add(res4);
+		sortRestauration.add(res1);
+		sortRestauration.add(res2);
+		sortRestauration.add(res3);
+		sortRestauration.add(res4);
 
 
-        for(RestaurantCompare r : sortrestauration){
+
+        for(RestaurantCompare r : sortRestauration){
 
             System.out.println(r);
         }

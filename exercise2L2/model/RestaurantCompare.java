@@ -21,7 +21,7 @@ public class RestaurantCompare implements Comparable<RestaurantCompare> {
     @Override
     public int compareTo(RestaurantCompare o) {
         int compareName = this.name.compareToIgnoreCase(o.name);
-        if(compareName == 0){// si son iguales, entonces compara esto otro
+        if(compareName == 0){
             return Integer.compare(o.score, this.score);
         }
         return compareName;
