@@ -115,12 +115,6 @@ name: restaurant1, rating: 7
 3. You can add objects or simulate exceptions to see how they work.
 
 
-### ⚙️ Deployment.
-
-This project is for educational purposes only.
-
-- You can generate a `.jar` file using your IDE if needed.
-- 
 ### 🤝 Contributions.
 
 1. Fork the repository.
