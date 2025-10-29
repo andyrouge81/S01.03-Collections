@@ -93,6 +93,7 @@ name: restaurant1, rating: 7
 - Example:
 - 
     ```bash
+
         name: restaurant1, rating: 8
         name: restaurant1, rating: 7
 >>>>>>> e1a4d39 (fix: change structure directories and refactor methods)
