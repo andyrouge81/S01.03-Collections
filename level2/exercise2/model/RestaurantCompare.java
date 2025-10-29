@@ -1,8 +1,7 @@
-package TascaS103Collections.exercise2L2.model;
+package TascaS103Collections.level2.exercise2.model;
 
 
 public class RestaurantCompare implements Comparable<RestaurantCompare> {
-
 
 
     private String name;
@@ -17,6 +16,10 @@ public class RestaurantCompare implements Comparable<RestaurantCompare> {
     public String getName(){return this.name;}
 
     public int getScore(){return this.score;}
+
+	public void addRestaurant(){
+
+	}
 
     @Override
     public int compareTo(RestaurantCompare o) {

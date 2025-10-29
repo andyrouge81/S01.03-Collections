@@ -1,7 +1,6 @@
-package TascaS103Collections.exercise3L1.model;
+package TascaS103Collections.level1.exercise3.model;
 
 public class User {
-
 
     private String name;
     private int score;
@@ -11,7 +10,6 @@ public class User {
         this.name = name;
         this.score = 0;
 
-
     }
 
     public String getName(){return this.name;}
@@ -19,13 +17,10 @@ public class User {
     public int getScore(){return this.score;}
 
 
-
     public void addPoint(){
 
 		this.score++;
     }
-
-
 
 
     @Override

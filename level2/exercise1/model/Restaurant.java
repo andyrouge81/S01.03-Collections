@@ -1,4 +1,4 @@
-package TascaS103Collections.exercise1L2.model;
+package TascaS103Collections.level2.exercise1.model;
 
 
 import java.util.Objects;
@@ -27,6 +27,7 @@ public class Restaurant  {
         return this.score == rest1.score && this.name.equals(rest1.name);
     }
 
+
     @Override
     public int hashCode() {
         return Objects.hash(score, name);
@@ -34,6 +35,6 @@ public class Restaurant  {
 
     @Override
     public String toString(){
-        return String.format("Restaurant: %s - Score: %d",getName(),getScore());
+        return String.format("Restaurant: %s - Review Points: %d",getName(),getScore());
     }
 }
